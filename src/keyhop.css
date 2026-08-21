@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@source "./**/*.gleam";
+@source "../index.html";
+@plugin "daisyui";

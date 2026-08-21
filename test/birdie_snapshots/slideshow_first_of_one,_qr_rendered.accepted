@@ -1,0 +1,48 @@
+---
+version: 2.0.1
+title: slideshow: first of one, qr rendered
+file: ./test/keyhop_test.gleam
+test_name: the_slideshow_renders_its_qr_test
+---
+<main class="flex min-h-screen flex-col items-center justify-center gap-4 p-4">
+  <header class="space-y-1 text-center">
+    <p class="text-sm opacity-60">
+      1 of 1
+    </p>
+    <h2 class="text-xl font-semibold">
+      GitHub
+      <span class="px-1 opacity-40">
+        /
+      </span>
+      alice
+
+    </h2>
+  </header>
+  <div class="w-[min(70vh,90vw,100%)] [&amp;&gt;svg]:box-border [&amp;&gt;svg]:h-auto [&amp;&gt;svg]:w-full [&amp;&gt;svg]:rounded-lg [&amp;&gt;svg]:bg-white [&amp;&gt;svg]:p-4"><svg data-stub="qr"></svg></div>
+  <div class="flex flex-wrap justify-center gap-2">
+    <button class="btn btn-ghost">
+      Previous
+    </button>
+    <button class="btn btn-ghost">
+      Next
+    </button>
+    <button class="btn btn-primary">
+      Done
+    </button>
+  </div>
+  <footer class="text-center text-sm opacity-60">
+    <p class="flex items-center justify-center gap-1">
+      <kbd class="kbd kbd-sm">
+        Left
+      </kbd>
+      <kbd class="kbd kbd-sm">
+        Right
+      </kbd>
+      to move,
+      <kbd class="kbd kbd-sm">
+        Esc
+      </kbd>
+      to exit
+    </p>
+  </footer>
+</main>

@@ -1,0 +1,47 @@
+---
+version: 2.0.1
+title: slideshow: second of three, uri too long
+file: ./test/keyhop_test.gleam
+test_name: the_slideshow_renders_a_qr_failure_test
+---
+<main class="flex min-h-screen flex-col items-center justify-center gap-4 p-4">
+  <header class="space-y-1 text-center">
+    <p class="text-sm opacity-60">
+      2 of 3
+    </p>
+    <h2 class="text-xl font-semibold">
+      alice
+    </h2>
+  </header>
+  <div class="grid aspect-square w-[min(70vh,90vw,100%)] place-content-center rounded-lg border border-dashed border-base-300 text-center">
+    <p>
+      This account&#39;s issuer and label are too long to fit in a QR code.
+    </p>
+  </div>
+  <div class="flex flex-wrap justify-center gap-2">
+    <button class="btn btn-ghost">
+      Previous
+    </button>
+    <button class="btn btn-ghost">
+      Next
+    </button>
+    <button class="btn btn-primary">
+      Done
+    </button>
+  </div>
+  <footer class="text-center text-sm opacity-60">
+    <p class="flex items-center justify-center gap-1">
+      <kbd class="kbd kbd-sm">
+        Left
+      </kbd>
+      <kbd class="kbd kbd-sm">
+        Right
+      </kbd>
+      to move,
+      <kbd class="kbd kbd-sm">
+        Esc
+      </kbd>
+      to exit
+    </p>
+  </footer>
+</main>

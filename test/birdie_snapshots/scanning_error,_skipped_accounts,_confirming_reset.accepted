@@ -1,0 +1,54 @@
+---
+version: 2.0.1
+title: scanning: error, skipped accounts, confirming reset
+file: ./test/keyhop_test.gleam
+test_name: a_scan_with_an_error_and_skips_renders_test
+---
+<main class="mx-auto max-w-3xl space-y-4 p-6">
+  <h1 class="text-2xl font-semibold">
+    Scan your export
+  </h1>
+  <div class="[&amp;&gt;video]:w-full [&amp;&gt;video]:max-w-[520px] [&amp;&gt;video]:rounded-box [&amp;&gt;video]:bg-black" id="camera-preview"></div>
+  <p>
+    1 of 3 codes scanned
+  </p>
+  <span class="flex flex-wrap items-center gap-2 text-sm">
+    Discard the codes already scanned?
+    <button class="btn btn-sm btn-error">
+      Discard
+    </button>
+    <button class="btn btn-sm btn-ghost">
+      Keep scanning
+    </button>
+  </span>
+  <p class="max-w-[52ch] text-sm opacity-60">
+    Google Authenticator shows the export on the phone that holds your accounts, so that phone cannot scan its own screen. Use a second device like a laptop with a webcam to scan it.
+  </p>
+  <div class="alert alert-error" role="alert">
+    <span>
+      That isn&#39;t a Google Authenticator export.
+    </span>
+  </div>
+  <div class="alert alert-warning block">
+    <p class="font-medium">
+      Skipped accounts:
+    </p>
+    <ul class="list-inside list-disc text-sm">
+      <li>
+        GitHub
+        <span class="px-1 opacity-40">
+          /
+        </span>
+        alice
+
+        : otpauth doesn&#39;t support this setting
+      </li>
+      <li>
+        bob: no secret
+      </li>
+    </ul>
+  </div>
+  <p class="max-w-[52ch] text-sm opacity-60">
+    keyhop runs entirely in this page and never intentionally writes to storage.
+  </p>
+</main>

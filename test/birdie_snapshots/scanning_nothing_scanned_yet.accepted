@@ -1,0 +1,25 @@
+---
+version: 2.0.1
+title: scanning: nothing scanned yet
+file: ./test/keyhop_test.gleam
+test_name: a_fresh_scan_renders_test
+---
+<main class="mx-auto max-w-3xl space-y-4 p-6">
+  <h1 class="text-2xl font-semibold">
+    Scan your export
+  </h1>
+  <div class="[&amp;&gt;video]:w-full [&amp;&gt;video]:max-w-[520px] [&amp;&gt;video]:rounded-box [&amp;&gt;video]:bg-black" id="camera-preview"></div>
+  <p>
+    0 of 0 codes scanned
+  </p>
+  <button class="btn btn-ghost">
+    Start over
+  </button>
+  <p class="max-w-[52ch] text-sm opacity-60">
+    Google Authenticator shows the export on the phone that holds your accounts, so that phone cannot scan its own screen. Use a second device like a laptop with a webcam to scan it.
+  </p>
+
+  <p class="max-w-[52ch] text-sm opacity-60">
+    keyhop runs entirely in this page and never intentionally writes to storage.
+  </p>
+</main>

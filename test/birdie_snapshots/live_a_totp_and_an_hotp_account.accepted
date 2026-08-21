@@ -1,0 +1,50 @@
+---
+version: 2.0.1
+title: live: a totp and an hotp account
+file: ./test/keyhop_test.gleam
+test_name: live_accounts_render_test
+---
+<main class="mx-auto max-w-3xl space-y-4 p-6">
+  <header class="flex flex-wrap items-center gap-2">
+    <h1 class="grow text-2xl font-semibold">
+      Your accounts
+    </h1>
+    <button class="btn btn-primary">
+      Start slideshow
+    </button>
+    <button class="btn btn-ghost">
+      Clear secrets
+    </button>
+  </header>
+  <ul class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-3">
+    <li class="card border border-base-300 bg-base-200">
+      <div class="card-body gap-2 p-4">
+        <p class="text-sm opacity-60">
+          GitHub
+          <span class="px-1 opacity-40">
+            /
+          </span>
+          alice
+
+        </p>
+        <p class="font-mono text-3xl font-semibold tracking-wider">
+          330 574
+        </p>
+        <progress class="progress progress-primary h-1" max="30" value="10"></progress>
+      </div>
+    </li>
+    <li class="card border border-base-300 bg-base-200">
+      <div class="card-body gap-2 p-4">
+        <p class="text-sm opacity-60">
+          bob
+        </p>
+        <p class="font-mono text-3xl font-semibold tracking-wider">
+          6542 5461
+        </p>
+        <p class="text-sm opacity-60">
+          HOTP counter 7
+        </p>
+      </div>
+    </li>
+  </ul>
+</main>
