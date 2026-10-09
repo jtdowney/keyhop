@@ -22,7 +22,7 @@ jobs:
       - uses: erlef/setup-beam@54075bcc5e249e4758d363f27d099f55d843f124 # v1.24.1
         with:
           otp-version: "29"
-          gleam-version: "1.18.1"
+          gleam-version: "1.19.1"
           rebar3-version: "3"
       - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.0.10
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
