@@ -9,7 +9,8 @@ import otp
 import qcheck
 import support/fixture
 
-const real_v2_export = "otpauth-migration://offline?data=CjUKBWYkQUSTEgdNWUxBQkVMGghNWUlTU1VFUiACKAIwAkITNjE5NGJjMTczNzcyNzc5ODc5MxACGAEgAA%3D%3D"
+const real_v2_export =
+  "otpauth-migration://offline?data=CjUKBWYkQUSTEgdNWUxBQkVMGghNWUlTU1VFUiACKAIwAkITNjE5NGJjMTczNzcyNzc5ODc5MxACGAEgAA%3D%3D"
 
 fn batch_of(id: Int, index: Int, size: Int, name: String) -> accounts.Batch {
   let assert Ok(b) =
